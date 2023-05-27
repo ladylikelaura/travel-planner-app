@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Travel Planner App</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="app">
+    <div class="holder headline">Travel Planner App</div>
+    <div class="inputs">
+      <div class="holder location">
+        <label for="location">Enter The Location</label>
+        <input type="text" id="location" placeholder="enter location here" />
+      </div>
+      <div class="holder time-range">
+        <label>When is the trip?</label>
+        <input type="date" id="arrival-time" />
+        <span class="arrow">&#10230;</span>
+        <input type="date" id="departure-time" />
+      </div>
+      <!-- <div class="holder feel">
+        <label for="feelings">How are you feeling today?</label>
+        <textarea class="myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
+      </div> -->
+    </div>
+    <button id="submit" type="submit">Submit</button>
+    <div class="entry">
+      <div class="title">Result</div>
+      <div id="result">
+        <div id="entryHolder">
+          <div>
+            <img width="400" height="180" id="location-image" src="" />
+          </div>
+          <div>
+            <span>Arrival Date: </span>
+            <span id="arrival-date"></span>
+          </div>
+          <div>
+            <span>Departure Date: </span>
+            <span id="departure-date"></span>
+          </div>
+          <div>
+            <span>Length of trip: </span>
+            <span id="trip-length"></span>
+          </div>
+          <div>
+            <span>Country: </span>
+            <span id="country"></span>
+          </div>
+          <div>
+            <span>Longitude: </span>
+            <span id="longitude"></span>
+          </div>
+          <div>
+            <span>Latitude: </span>
+            <span id="latitude"></span>
+          </div>
+          <div>
+            <span>Temperature: </span>
+            <span id="temperature"></span>
+          </div>
+          <div>
+            <span>Weather Overview: </span>
+            <span id="weather"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="dist/index.js" type="text/javascript"></script>
+</body>
+
+</html>

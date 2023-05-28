@@ -1,5 +1,5 @@
 const express = require("express");
-const path = require("node:path");
+const path = require("path");
 
 const app = express();
 // Setup empty JS object to act as endpoint for all routes
